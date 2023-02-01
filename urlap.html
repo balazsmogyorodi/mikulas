@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mogyoródi Balázs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -31,16 +32,19 @@
 
 
         </aside>
-        <article>
-            <label for="nev">Kérek egy nevet!</label>
-            <input type="text">
-
-            <label for="cim">Kérek egy címet!</label>
-            <input type="text">
-
-            <label for="ajandek"> Milyen ajándékot szeretnél!</label>
-            <input type="text">
-            
+        <article >
+            <div class="input-group">
+            <label for="nev" class="accordion-button">Kérek egy nevet!</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="input-group">
+            <label for="cim" class="accordion-button">Kérek egy címet!</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="input-group">
+            <label for="ajandek" class="accordion-button"> Milyen ajándékot szeretnél!</label>
+            <input type="text" class="form-control">
+        </div>
         </article>
 
         <footer>
