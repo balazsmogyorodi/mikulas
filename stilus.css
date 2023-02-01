@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(kepek/hatter.jpg);
+}
+
+main {
+    width: 80%;
+    max-height:1000px ;
+    margin: auto;
+    background-color: RGB(255,255,230) ;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        'h h h h h'
+        'n n n n n '
+        'as a a a a'
+        'f f f f f'
+    ;
+}
+
+header {
+    grid-area: h;
+    background-image: url(kepek/fejlec.jpg);
+    text-align: center;
+    height: 550px;
+    color: red;
+   
+}
+header: h1{
+    font-weight: bolder;
+    font-family: cursive;
+    margin-top: 60px;
+   
+    }
+
+
+
+nav {
+    grid-area: n;
+    background-color: red;
+    height: 50px;
+    
+}
+
+ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+li {
+    display: inline;
+    border-top: 1pt solid white ;
+    border-bottom: 1pt solid white ;
+    padding: 5px;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+li a:hover{
+background-color: green;
+}
+
+article {
+    grid-area: a;
+    text-align: justify;
+    margin: 10px;
+}
+h2 {
+
+    font-size: 15px;
+    color: #ff1a1a;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+p {
+font-size: 10px;
+}
+
+article img {
+    border-radius: 20%;
+    box-shadow: 0px 6px #888888;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+aside {
+    grid-area: as;
+    width: 100%;
+    
+}
+ aside img {
+    width: 100%;
+   border: 1px solid red;
+}
+
+
+footer {
+    grid-area: f;
+    background-color: red;
+    text-align: center;
+    color: white;
+
+}
+
+
+@media only screen and (max-width: 700px) {
+    main {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-areas:
+        'h h h'
+        'n n n '
+        'a a a'
+        'as as as'
+        'f f f'
+    ;
+    }
+
+    aside {
+        display: grid;
+    grid-template-columns: 1fr 2fr;
+    }
+
+    aside img {
+        width: 70%;
+    
+    }
+
+
+
+
+}
+    
+
+
